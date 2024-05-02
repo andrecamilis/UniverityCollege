@@ -15,7 +15,7 @@ public class ConnectionFactory extends SQLiteOpenHelper {
     public static final String TABLE_NAME = "aluno";
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_NAME = "nome";
-    public static final String COLUMN_SENHA = "senha";
+    public static final String COLUMN_PASSWORD = "senha";
 
 
 
@@ -28,7 +28,7 @@ public class ConnectionFactory extends SQLiteOpenHelper {
         String createTableSQL = "CREATE TABLE " + TABLE_NAME + " ( " +
                 COLUMN_ID + "INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_NAME + " VARCHAR(50), " +
-                COLUMN_SENHA + " VARCHAR(50));";
+                COLUMN_PASSWORD + " VARCHAR(50));";
 
         db.execSQL(createTableSQL);
 
